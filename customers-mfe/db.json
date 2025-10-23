@@ -1,0 +1,404 @@
+{
+  "users": [
+    {
+      "id": "usr_001",
+      "name": "María González",
+      "email": "maria.gonzalez@techcorp.com",
+      "phone": "+57 310 234 5678",
+      "company": "TechCorp Solutions",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_002",
+      "name": "Carlos Rodríguez",
+      "email": "carlos.rodriguez@innovatech.com",
+      "phone": "+57 315 876 5432",
+      "company": "InnovaTech",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_003",
+      "name": "Ana Martínez",
+      "email": "ana.martinez@digitalwave.com",
+      "phone": "+57 320 445 7890",
+      "company": "Digital Wave",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_004",
+      "name": "Diego López",
+      "email": "diego.lopez@cloudservices.com",
+      "phone": "+57 318 992 3456",
+      "company": "Cloud Services SA",
+      "location": "Barranquilla, Colombia"
+    },
+    {
+      "id": "usr_005",
+      "name": "Laura Pérez",
+      "email": "laura.perez@dataanalytics.com",
+      "phone": "+57 312 567 8901",
+      "company": "Data Analytics Group",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_006",
+      "name": "Juan Ramírez",
+      "email": "juan.ramirez@softwaredev.com",
+      "phone": "+57 317 234 5678",
+      "company": "Software Dev Inc",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_007",
+      "name": "Camila Torres",
+      "email": "camila.torres@marketingpro.com",
+      "phone": "+57 314 889 0123",
+      "company": "Marketing Pro",
+      "location": "Cartagena, Colombia"
+    },
+    {
+      "id": "usr_008",
+      "name": "Andrés Silva",
+      "email": "andres.silva@fintech.com",
+      "phone": "+57 319 445 6789",
+      "company": "FinTech Colombia",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_009",
+      "name": "Valentina Moreno",
+      "email": "valentina.moreno@ecommerce.com",
+      "phone": "+57 311 223 4567",
+      "company": "E-Commerce Solutions",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_010",
+      "name": "Santiago Herrera",
+      "email": "santiago.herrera@cybersec.com",
+      "phone": "+57 316 778 9012",
+      "company": "CyberSec Group",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_011",
+      "name": "Isabella Castro",
+      "email": "isabella.castro@logistics.com",
+      "phone": "+57 313 334 5678",
+      "company": "Logistics Express",
+      "location": "Bucaramanga, Colombia"
+    },
+    {
+      "id": "usr_012",
+      "name": "Mateo Vargas",
+      "email": "mateo.vargas@robotics.com",
+      "phone": "+57 321 556 7890",
+      "company": "Robotics Lab",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_013",
+      "name": "Sofía Mendoza",
+      "email": "sofia.mendoza@healthtech.com",
+      "phone": "+57 315 667 8901",
+      "company": "HealthTech Solutions",
+      "location": "Pereira, Colombia"
+    },
+    {
+      "id": "usr_014",
+      "name": "Sebastián Ruiz",
+      "email": "sebastian.ruiz@aicompany.com",
+      "phone": "+57 310 889 0123",
+      "company": "AI Company Ltd",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_015",
+      "name": "Mariana Jiménez",
+      "email": "mariana.jimenez@consulting.com",
+      "phone": "+57 318 990 1234",
+      "company": "Business Consulting",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_016",
+      "name": "Felipe Gómez",
+      "email": "felipe.gomez@energy.com",
+      "phone": "+57 312 112 3456",
+      "company": "Energy Solutions",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_017",
+      "name": "Daniela Ortiz",
+      "email": "daniela.ortiz@fashion.com",
+      "phone": "+57 317 223 4567",
+      "company": "Fashion Forward",
+      "location": "Cartagena, Colombia"
+    },
+    {
+      "id": "usr_018",
+      "name": "Nicolás Reyes",
+      "email": "nicolas.reyes@automotive.com",
+      "phone": "+57 314 334 5678",
+      "company": "Automotive Tech",
+      "location": "Barranquilla, Colombia"
+    },
+    {
+      "id": "usr_019",
+      "name": "Lucía Navarro",
+      "email": "lucia.navarro@education.com",
+      "phone": "+57 319 445 6789",
+      "company": "Education Plus",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_020",
+      "name": "Alejandro Sánchez",
+      "email": "alejandro.sanchez@construction.com",
+      "phone": "+57 311 556 7890",
+      "company": "Construction Group",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_021",
+      "name": "Paula García",
+      "email": "paula.garcia@travel.com",
+      "phone": "+57 316 667 8901",
+      "company": "Travel Agency Pro",
+      "location": "Santa Marta, Colombia"
+    },
+    {
+      "id": "usr_022",
+      "name": "Miguel Ángel Díaz",
+      "email": "miguel.diaz@media.com",
+      "phone": "+57 313 778 9012",
+      "company": "Media Productions",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_023",
+      "name": "Carolina Muñoz",
+      "email": "carolina.munoz@legal.com",
+      "phone": "+57 320 889 0123",
+      "company": "Legal Services",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_024",
+      "name": "Ricardo Romero",
+      "email": "ricardo.romero@banking.com",
+      "phone": "+57 315 990 1234",
+      "company": "Banking Corp",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_025",
+      "name": "Gabriela Fernández",
+      "email": "gabriela.fernandez@pharma.com",
+      "phone": "+57 310 101 2345",
+      "company": "Pharma Labs",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_026",
+      "name": "Tomás Álvarez",
+      "email": "tomas.alvarez@agriculture.com",
+      "phone": "+57 318 212 3456",
+      "company": "Agriculture Tech",
+      "location": "Villavicencio, Colombia"
+    },
+    {
+      "id": "usr_027",
+      "name": "Andrea Castro",
+      "email": "andrea.castro@insurance.com",
+      "phone": "+57 312 323 4567",
+      "company": "Insurance Group",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_028",
+      "name": "Javier Medina",
+      "email": "javier.medina@telecom.com",
+      "phone": "+57 317 434 5678",
+      "company": "Telecom Services",
+      "location": "Barranquilla, Colombia"
+    },
+    {
+      "id": "usr_029",
+      "name": "Natalia Rojas",
+      "email": "natalia.rojas@hospitality.com",
+      "phone": "+57 314 545 6789",
+      "company": "Hospitality Solutions",
+      "location": "Cartagena, Colombia"
+    },
+    {
+      "id": "usr_030",
+      "name": "Oscar Parra",
+      "email": "oscar.parra@mining.com",
+      "phone": "+57 319 656 7890",
+      "company": "Mining Corporation",
+      "location": "Bucaramanga, Colombia"
+    },
+    {
+      "id": "usr_031",
+      "name": "Victoria Luna",
+      "email": "victoria.luna@retail.com",
+      "phone": "+57 311 767 8901",
+      "company": "Retail Chain",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_032",
+      "name": "Daniel Cortés",
+      "email": "daniel.cortes@aerospace.com",
+      "phone": "+57 316 878 9012",
+      "company": "Aerospace Tech",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_033",
+      "name": "Juliana Vega",
+      "email": "juliana.vega@entertainment.com",
+      "phone": "+57 313 989 0123",
+      "company": "Entertainment Studios",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_034",
+      "name": "Esteban Cruz",
+      "email": "esteban.cruz@transport.com",
+      "phone": "+57 320 090 1234",
+      "company": "Transport Solutions",
+      "location": "Pereira, Colombia"
+    },
+    {
+      "id": "usr_035",
+      "name": "Melissa Ríos",
+      "email": "melissa.rios@design.com",
+      "phone": "+57 315 101 2345",
+      "company": "Design Studio",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_036",
+      "name": "Héctor Molina",
+      "email": "hector.molina@sports.com",
+      "phone": "+57 310 212 3456",
+      "company": "Sports Management",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_037",
+      "name": "Catalina Salazar",
+      "email": "catalina.salazar@architecture.com",
+      "phone": "+57 318 323 4567",
+      "company": "Architecture Firm",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_038",
+      "name": "Roberto Guzmán",
+      "email": "roberto.guzman@manufacturing.com",
+      "phone": "+57 312 434 5678",
+      "company": "Manufacturing Co",
+      "location": "Barranquilla, Colombia"
+    },
+    {
+      "id": "usr_039",
+      "name": "Adriana Maldonado",
+      "email": "adriana.maldonado@hr.com",
+      "phone": "+57 317 545 6789",
+      "company": "HR Solutions",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_040",
+      "name": "Fernando Ospina",
+      "email": "fernando.ospina@security.com",
+      "phone": "+57 314 656 7890",
+      "company": "Security Systems",
+      "location": "Cartagena, Colombia"
+    },
+    {
+      "id": "usr_041",
+      "name": "Liliana Campos",
+      "email": "liliana.campos@biotech.com",
+      "phone": "+57 319 767 8901",
+      "company": "BioTech Labs",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_042",
+      "name": "Germán Arias",
+      "email": "german.arias@gaming.com",
+      "phone": "+57 311 878 9012",
+      "company": "Gaming Studios",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_043",
+      "name": "Paola Montoya",
+      "email": "paola.montoya@cosmetics.com",
+      "phone": "+57 316 989 0123",
+      "company": "Cosmetics Inc",
+      "location": "Cali, Colombia"
+    },
+    {
+      "id": "usr_044",
+      "name": "Álvaro Cárdenas",
+      "email": "alvaro.cardenas@furniture.com",
+      "phone": "+57 313 090 1234",
+      "company": "Furniture Design",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_045",
+      "name": "Lorena Bustos",
+      "email": "lorena.bustos@publishing.com",
+      "phone": "+57 320 101 2345",
+      "company": "Publishing House",
+      "location": "Bucaramanga, Colombia"
+    },
+    {
+      "id": "usr_046",
+      "name": "Raúl Escobar",
+      "email": "raul.escobar@beverage.com",
+      "phone": "+57 315 212 3456",
+      "company": "Beverage Company",
+      "location": "Medellín, Colombia"
+    },
+    {
+      "id": "usr_047",
+      "name": "Mónica Peña",
+      "email": "monica.pena@events.com",
+      "phone": "+57 310 323 4567",
+      "company": "Events Management",
+      "location": "Cartagena, Colombia"
+    },
+    {
+      "id": "usr_048",
+      "name": "Guillermo Franco",
+      "email": "guillermo.franco@petrochemical.com",
+      "phone": "+57 318 434 5678",
+      "company": "Petrochemical Industries",
+      "location": "Barranquilla, Colombia"
+    },
+    {
+      "id": "usr_049",
+      "name": "Tatiana Rincón",
+      "email": "tatiana.rincon@innovation.com",
+      "phone": "+57 312 545 6789",
+      "company": "Innovation Hub",
+      "location": "Bogotá, Colombia"
+    },
+    {
+      "id": "usr_050",
+      "name": "Mauricio Zapata",
+      "email": "mauricio.zapata@blockchain.com",
+      "phone": "+57 317 656 7890",
+      "company": "Blockchain Ventures",
+      "location": "Medellín, Colombia"
+    }
+  ]
+}
