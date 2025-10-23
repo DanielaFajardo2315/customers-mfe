@@ -1,0 +1,10 @@
+.footer {
+    background: var(--gradient-primary);
+    padding: 10px 0;
+}
+
+p {
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--text-light);
+}

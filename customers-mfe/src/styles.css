@@ -1,1 +1,10 @@
 @import '@angular/material/prebuilt-themes/azure-blue.css';
+
+:root {
+    --primary-color: #12557F;
+    --secondary-color: #002E52;
+    --terciary-color: #F2EAD9;
+    --gradient-primary: linear-gradient(90deg, #F2EAD9 0%, #12557F 100%);
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+}

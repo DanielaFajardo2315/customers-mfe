@@ -1,0 +1,13 @@
+nav {
+    background: var(--gradient-primary);
+
+}
+
+.img_logo {
+    width: 100px;
+    height: auto;
+}
+
+.nav-item {
+    color: var(--text-light) !important;
+}
