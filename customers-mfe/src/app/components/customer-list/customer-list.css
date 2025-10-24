@@ -1,12 +1,16 @@
-table {
-  width: 100%;
+.container_list {
+  margin: 20px 10px;
 }
 
-.mat-mdc-form-field {
-  font-size: 14px;
-  width: 100%;
+.filter_list {
+  width: 300px;
+  margin-bottom: 15px;
 }
 
-td, th {
-  width: 25%;
+.table_head {
+  background-color: var(--primary-color);
+}
+
+.demo-table {
+  width: 100%;
 }

@@ -1,24 +1,5 @@
-
 {
   "users": [
-    {
-      "id": "usr_001",
-      "name": "María González",
-      "email": "maria.gonzalez@techcorp.com",
-      "phone": "573102345678",
-      "company": "TechCorp Solutions",
-      "location": "Bogotá, Colombia",
-      "position": "Software Engineer"
-    },
-    {
-      "id": "usr_002",
-      "name": "Carlos Rodríguez",
-      "email": "carlos.rodriguez@innovatech.com",
-      "phone": "573158765432",
-      "company": "InnovaTech",
-      "location": "Medellín, Colombia",
-      "position": "Product Manager"
-    },
     {
       "id": "usr_003",
       "name": "Ana Martínez",
