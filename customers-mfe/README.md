@@ -1,59 +1,104 @@
-# CustomersMfe
+# Microfrontend de Gestión de Clientes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+Este proyecto es un microfrontend desarrollado con Angular que proporciona funcionalidades para la gestión de clientes, incluyendo la creación, edición, listado y eliminación de registros de clientes.
 
-## Development server
+## Características
 
-To start a local development server, run:
+- Interfaz moderna con Material Design
+- Listado de clientes con paginación y ordenamiento
+- Filtrado en tiempo real
+- Formularios reactivos para creación y edición
+- Eliminación de clientes con confirmación
 
+## Requisitos Previos
+
+- Node.js (v14 o superior)
+- npm (v6 o superior)
+- Angular CLI
+
+## Instalación
+
+1. Clonar el repositorio:
 ```bash
-ng serve
+git clone https://github.com/DanielaFajardo2315/customers-mfe.git
+cd customers-mfe
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Instalar dependencias:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Iniciar el servidor de desarrollo:
 ```bash
-ng generate --help
+ng serve -o
 ```
 
-## Building
+La aplicación estará disponible en `http://localhost:4201`
 
-To build the project run:
+## Estructura del Proyecto
 
-```bash
-ng build
+```
+customers-mfe/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── customer-list/       # Listado de clientes en tabla
+│   │   │   ├── customer-form/       # Formulario de edición
+│   │   │   ├── customer-form-create/# Formulario de creación
+│   │   │   ├── navbar/             # Barra de navegación
+│   │   │   └── footer/             # Pie de página
+│   │   ├── services/
+│   │   │   └── customers.ts        # Servicios de API
+│   │   ├── interfaces/
+│   │   │   └── customer.ts         # Interfaces y tipos
+│   │   └── environments/           # Configuraciones por entorno
+│   └── assets/                     # Recursos estáticos
+└── ...
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Características Técnicas
 
-## Running unit tests
+- **Framework**: Angular 20
+- **UI Library**: Angular Material
+- **Formularios**: Reactive Forms
+- **Estilo**: CSS
+- **Notificaciones**: SweetAlert2
+- **HTTP**: HttpClient para comunicación con API
+- **Estado**: Servicios de Angular para gestión de estado
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## API Endpoints
 
-```bash
-ng test
-```
+El microfrontend se comunica con una API REST con los siguientes endpoints:
 
-## Running end-to-end tests
+- `GET /users` - Obtener lista de clientes
+- `POST /users` - Crear nuevo cliente
+- `PUT /users/:id` - Actualizar cliente existente
+- `DELETE /users/:id` - Eliminar cliente
 
-For end-to-end (e2e) testing, run:
+## Configuración
 
-```bash
-ng e2e
-```
+Las configuraciones de entorno se encuentran en:
+- `src/environments/environment.ts` - Configuración por defecto
+- `src/environments/environment.dev.ts` - Configuración de desarrollo
+- `src/environments/environment.prod.ts` - Configuración de producción
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Convenciones de Código
 
-## Additional Resources
+- Componentes standalone con importaciones específicas
+- Uso de inyección de dependencias con `inject()`
+- Tipado estricto con TypeScript
+- Interfaces para modelos de datos
+- Formularios reactivos para manejo de datos
+- Servicios para lógica de negocio
+- Material Dialog para modales
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Autor
+
+Daniela Fajardo - [DanielaFajardo2315](https://github.com/DanielaFajardo2315)
+
+## Desiciones técnicas
+
+- Debido a el uso de la versión más reciente de Angular (versión 20) es sugerido el uso de Native Federation debido a que es más moderno, rápido y tiene mejor integración con Angular CLI, sin embargo, se tiene en cuenta que al usar Native Federation también se tienen ciertas desventajas por lo moderno que es, como que existen menos casos de producción, menos documentación disponible y puede tener posibles errores aún no descubiertos; por tal razón se decide el uso de Webpack Module Federation tradicional que es más maduro y probado en producción, funciona con cualquier framework y es compatible con otras versiones de Angular.
+- Se definió el siguiente Mockup básico para la ejecución del proyecto, teniendo en cuenta las necesidades y contexto inicial del reto.
+![Mockup del proyecto](./public/assets/mockup.png)
