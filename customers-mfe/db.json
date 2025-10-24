@@ -1,6 +1,24 @@
 {
   "users": [
     {
+      "id": "usr_001",
+      "name": "María González",
+      "email": "maria.gonzalez@techcorp.com",
+      "phone": "573102345678",
+      "company": "TechCorp Solutions",
+      "location": "Bogotá, Colombia",
+      "position": "Software Engineer"
+    },
+    {
+      "id": "usr_002",
+      "name": "Carlos Rodríguez",
+      "email": "carlos.rodriguez@innovatech.com",
+      "phone": "573158765432",
+      "company": "InnovaTech",
+      "location": "Medellín, Colombia",
+      "position": "Product Manager"
+    },
+    {
       "id": "usr_003",
       "name": "Ana Martínez",
       "email": "ana.martinez@digitalwave.com",
@@ -11,8 +29,8 @@
     },
     {
       "id": "usr_004",
-      "name": "Diego López",
-      "email": "diego.lopez@cloudservices.com",
+      "name": "Samuel López",
+      "email": "samuel.lopez@cloudservices.com",
       "phone": "573189923456",
       "company": "Cloud Services SA",
       "location": "Barranquilla, Colombia",
@@ -74,8 +92,8 @@
     },
     {
       "id": "usr_011",
-      "name": "Isabella Castro",
-      "email": "isabella.castro@logistics.com",
+      "name": "Isabella Romero",
+      "email": "isabella.romero@logistics.com",
       "phone": "573133345678",
       "company": "Logistics Express",
       "location": "Bucaramanga, Colombia",
@@ -431,6 +449,24 @@
       "company": "Blockchain Ventures",
       "location": "Medellín, Colombia",
       "position": "Blockchain Developer"
+    },
+    {
+      "id": "",
+      "name": "Lucia Velasquez",
+      "email": "lucia.velasquez@protech.com",
+      "phone": "573125487962",
+      "company": "Protech",
+      "location": "Cartagena, Bolivar",
+      "position": "Backend Developer"
+    },
+    {
+      "id": "",
+      "name": "Oscar Cortés",
+      "email": "oscar.cortes@natutech.com",
+      "phone": "57315986415",
+      "company": "Natu Tech",
+      "location": "Bogotá, Colombia",
+      "position": "Data Scientist"
     }
   ]
 }

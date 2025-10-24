@@ -1,8 +1,8 @@
-<div class="customer-form-container" [formGroup]="putCustomerForm">
+<div class="customer-form-container" [formGroup]="postCustomerForm">
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Nombre</mat-label>
         <input matInput formControlName="name" />
-        @if(putCustomerForm.get('name')?.hasError('required')){
+        @if(postCustomerForm.get('name')?.hasError('required')){
         <mat-error>El nombre es requerido</mat-error>
         }
     </mat-form-field>
@@ -10,10 +10,10 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Email</mat-label>
         <input matInput formControlName="email" />
-        @if(putCustomerForm.get('email')?.hasError('required')){
+        @if(postCustomerForm.get('email')?.hasError('required')){
         <mat-error>El email es requerido</mat-error>
         }
-        @if(putCustomerForm.get('email')?.hasError('email')){
+        @if(postCustomerForm.get('email')?.hasError('email')){
         <mat-error>Email inválido</mat-error>
         }
     </mat-form-field>
@@ -21,7 +21,7 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Teléfono</mat-label>
         <input matInput formControlName="phone" />
-        @if(putCustomerForm.get('phone')?.hasError('required')){
+        @if(postCustomerForm.get('phone')?.hasError('required')){
             <mat-error>El teléfono es requerido</mat-error>
         }
     </mat-form-field>
@@ -29,7 +29,7 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Empresa</mat-label>
         <input matInput formControlName="company" />
-        @if (putCustomerForm.get('company')?.hasError('required')) {
+        @if (postCustomerForm.get('company')?.hasError('required')) {
             <mat-error>La empresa es requerida</mat-error>
         }
     </mat-form-field>
@@ -37,7 +37,7 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Ubicación</mat-label>
         <input matInput formControlName="location" />
-        @if (putCustomerForm.get('location')?.hasError('required')) {
+        @if (postCustomerForm.get('location')?.hasError('required')) {
             <mat-error>La ubicación es requerida</mat-error>
         }
     </mat-form-field>
@@ -45,13 +45,13 @@
     <mat-form-field appearance="outline" class="full-width">
         <mat-label>Cargo</mat-label>
         <input matInput formControlName="position" />
-        @if (putCustomerForm.get('position')?.hasError('required')) {
+        @if (postCustomerForm.get('position')?.hasError('required')) {
             <mat-error>El cargo es requerido</mat-error>
         }
     </mat-form-field>
 
     <div class="actions">
-        <button mat-flat-button color="primary" (click)="save()" [disabled]="putCustomerForm.invalid">Guardar</button>
+        <button mat-flat-button color="primary" (click)="save()" [disabled]="postCustomerForm.invalid">Guardar</button>
         <button mat-button (click)="cancel()">Cancelar</button>
     </div>
 </div>

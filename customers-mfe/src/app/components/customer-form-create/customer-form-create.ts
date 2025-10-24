@@ -10,18 +10,17 @@ import { CustomersService } from '../../services/customers';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-customer-form',
-  standalone: true,
+  selector: 'app-customer-form-create',
   imports: [CommonModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule],
-  templateUrl: './customer-form.html',
-  styleUrl: './customer-form.css',
+  templateUrl: './customer-form-create.html',
+  styleUrl: './customer-form-create.css',
 })
-export class CustomerForm implements OnInit {
+export class CustomerFormCreate implements OnInit {
   private _customersService = inject(CustomersService);
   private _dialogRef = inject(MatDialogRef);
   private _data = inject(MAT_DIALOG_DATA) as Customer | null;
 
-  putCustomerForm = new FormGroup({
+  postCustomerForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
     phone: new FormControl<number | null>(null, [Validators.required, Validators.minLength(7)]),
@@ -32,39 +31,41 @@ export class CustomerForm implements OnInit {
 
   ngOnInit(): void {
     if (this._data) {
-      this.putCustomerForm.patchValue(this._data as any);
+      this.postCustomerForm.patchValue(this._data as any);
     }
   }
 
-  // Guardar (actualizar) cliente
+  // Crear cliente
   save(): void {
-    if (this.putCustomerForm.invalid) {
-      this.putCustomerForm.markAllAsTouched();
+    if (this.postCustomerForm.invalid) {
+      this.postCustomerForm.markAllAsTouched();
       return;
     }
 
     const updatedCustomer: Customer = {
       id: this._data?.id || '',
-      name: this.putCustomerForm.value.name || '',
-      email: this.putCustomerForm.value.email || '',
-      phone: this.putCustomerForm.value.phone || 0,
-      company: this.putCustomerForm.value.company || '',
-      location: this.putCustomerForm.value.location || '',
-      position: this.putCustomerForm.value.position || '',
+      name: this.postCustomerForm.value.name || '',
+      email: this.postCustomerForm.value.email || '',
+      phone: this.postCustomerForm.value.phone || 0,
+      company: this.postCustomerForm.value.company || '',
+      location: this.postCustomerForm.value.location || '',
+      position: this.postCustomerForm.value.position || '',
     };
 
-    this._customersService.putCustomer(updatedCustomer, updatedCustomer.id).subscribe({
+    this._customersService.postCustomer(updatedCustomer).subscribe({
       next: (resp: any) => {
         Swal.fire({
-          title: 'Cliente actualizado correctamente',
+          title: 'Cliente creado correctamente',
           icon: 'success',
-        }).then(() => this._dialogRef.close(true));
+        }).then(() => {
+          this._dialogRef.close(true);
+        });
       },
       error: (err: any) => {
-        console.error('Error al actualizar el cliente: ', err);
+        console.error('Error al crear el cliente: ', err);
         Swal.fire({
           title: 'Ocurrió un error',
-          text: 'Este cliente no ha podido ser actualizado, intente de nuevo',
+          text: 'Este cliente no ha podido ser creado, intente de nuevo',
           icon: 'error',
         });
       },

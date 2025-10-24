@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { Customer } from '../../interfaces/customer';
 import { CustomersService } from '../../services/customers';
 import { CustomerForm } from '../customer-form/customer-form';
@@ -23,7 +23,8 @@ import Swal from 'sweetalert2';
     CustomerForm,
     MatSortModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule
   ],
   templateUrl: './customer-list.html',
   styleUrl: './customer-list.css',
@@ -96,7 +97,8 @@ export class CustomerList implements OnInit, AfterViewInit {
   // Redirección actualizar cliente
   putCustomer(customer: Customer) {
     const dialogRef = this.dialog.open(CustomerForm, {
-      width: '500px',
+      width: '80%',
+      height: '80%',
       data: customer
     });
 
